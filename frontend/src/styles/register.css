@@ -1,0 +1,115 @@
+/* Register Page Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .register-container {
+    height: 100vh;
+	width: 100vw;
+	background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .register-content {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    width: 370px;
+    height: 610px;
+  }
+  h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.1rem;
+    font-size: 0.90rem;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    transition: border 0.1s;
+  }
+  
+  input:focus {
+    border-color: #2a9d8f;
+    outline: none;
+  }
+  
+  button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1f776c;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+  }
+  
+  p[style*="red"] {
+    color: red;
+  }
+  
+  p[style*="green"] {
+    color: green;
+  }
+  .login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .login-link a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,93 @@
+/* layout.css */
+
+/* Global Styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+  }
+  
+  /* Wrapper with background */
+  .layout-wrapper {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Overlay for darkening the background */
+  .background-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	box-sizing: border-box;
+  }
+  
+  /* Centered content block */
+  .center-content {
+	color: #fff;
+	text-align: center;
+	max-width: 700px;
+  }
+  
+  /* Main title styling */
+  .main-title {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Sub-title */
+  .sub-title {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: 2.5rem;
+	line-height: 1.4;
+	color: #f0f0f0;
+  }
+  
+  /* Button container */
+  .auth-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+  }
+  
+  /* Button style */
+  .button {
+	padding: 0.8rem 2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	background: linear-gradient(135deg, #4caf50, #388e3c);
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .button:hover {
+	background: linear-gradient(135deg, #66bb6a, #2e7d32);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  }
+  
