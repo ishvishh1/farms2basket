@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../styles/register.css";
+import "../assets/styles/register.css";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -38,16 +38,20 @@ export default function Register() {
             setSuccessMessage("Registration successful! Please verify your email with the OTP.");
 
 		// Redirect to verify email page
-		setTimeout(() => {
-			navigate(`/verify-email/${formData.username}`);
-		}, 1500);}
+		if (formData.username) {
+         setTimeout(() => {
+          navigate(`/verify-email/${formData.username}`);
+        }, 1500);
+} else {
+  setError("Username is required");
+}
 //    // Redirect to login page after 1.5 seconds
 //    setTimeout(() => {
 // 	navigate("/login");
 // }, 1500);}
 // Redirect to verify email page
 
-        catch(error){
+ } catch(error){
             console.log("Error during registration!", error.response?.data);
             if(error.response && error.response.data){
                 Object.keys(error.response.data).forEach(field => {
@@ -55,11 +59,11 @@ export default function Register() {
                     if(errorMessages && errorMessages.length > 0){
                         setError(errorMessages[0]);
                     }
-                })
+                });
             }
         }
         finally{
-            setIsLoading(false)
+            setIsLoading(false);
         }
 
 	};

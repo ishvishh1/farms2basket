@@ -1,0 +1,88 @@
+/* Sidebar Container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px; /* Slightly wider for better spacing */
+    background-color: #4CAF50; /* Green background */
+    padding-top: 20px;
+    z-index: 1000; /* Ensure the sidebar is always on top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin: 10px 0;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+    display: block;
+    padding: 14px 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background-color: #388E3C; /* Darker green on hover/active */
+    transform: translateX(5px); /* Adds a smooth shifting effect */
+}
+
+/* Logout Button */
+.sidebar-item button {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-item button:hover {
+    background-color: #388E3C;
+    transform: translateX(5px);
+}
+
+/* Ensure content starts after the sidebar */
+.content {
+    margin-left: 260px; /* Adjusted based on sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Remove hamburger menu as sidebar is always visible */
+.hamburger {
+    display: none;
+}
+
+/* Responsive Styles (Mobile View) */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 220px; /* Slightly smaller sidebar for mobile */
+    }
+
+    .content {
+        margin-left: 220px; /* Adjust content accordingly */
+    }
+
+    .sidebar-link,
+    .sidebar-item button {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 12px 20px;
+    }
+}

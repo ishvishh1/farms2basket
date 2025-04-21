@@ -1,0 +1,37 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-sizing: border-box;
+  }
+  
+  .product-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-item p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .buy-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #218838;
+  }
+  

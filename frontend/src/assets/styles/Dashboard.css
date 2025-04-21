@@ -1,0 +1,32 @@
+/* src/assets/styles/Dashboard.css */
+.dashboard-content {
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .dashboard-page {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #34495e;
+    color: white;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar-link {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #2980b9;
+  }
+  

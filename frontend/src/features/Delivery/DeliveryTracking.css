@@ -1,0 +1,31 @@
+.delivery-tracking {
+    padding: 20px;
+  }
+  
+  .delivery-tracking h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .delivery-status {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .status-item {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .status-item .status {
+    font-weight: bold;
+  }
+  
+  .status-item .timestamp {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  

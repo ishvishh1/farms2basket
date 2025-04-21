@@ -1,0 +1,33 @@
+.payments-page {
+    padding: 20px;
+  }
+  
+  .payments-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .payment-option {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .payment-option h3 {
+    font-size: 1.5rem;
+  }
+  
+  .payment-option button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .payment-option button:hover {
+    background-color: #218838;
+  }
+  

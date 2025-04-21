@@ -1,0 +1,15 @@
+/* Footer styles */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: auto;  /* Ensures footer is at the bottom */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  

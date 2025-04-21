@@ -1,0 +1,22 @@
+.order-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .order-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .order-item p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
