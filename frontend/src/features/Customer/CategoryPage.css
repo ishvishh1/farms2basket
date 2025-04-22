@@ -1,0 +1,102 @@
+/* Styling for category name */
+.category-page h2 {
+    font-size: 2rem; /* Adjust font size */
+    color: #333;     /* Choose the text color */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Container for the category page */
+  .category-page {
+    padding: 20px;
+    margin-left: 260px; /* Adjust if sidebar is fixed */
+  }
+  
+  /* Category Header: Back Button and Search Bar */
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px; /* Adds space between the button and search bar */
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    width: 180px; /* Make the search bar a bit smaller */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Grid of products */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Individual product cards */
+  .product-card {
+    width: 200px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product image */
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Product button styles */
+  .product-card button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Styles for Add to Cart button */
+  .product-card .add-to-cart {
+    background-color: #f0f0f0; /* Lighter background */
+    color: #333;               /* Dark text */
+    border: 1px solid #ccc;    /* Border for differentiation */
+  }
+  
+  /* Styles for Buy Now button */
+  .product-card .buy-now {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    margin-left: 10px;
+  }
+  
+  /* Mobile responsive */
+  @media screen and (max-width: 768px) {
+    .category-header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .product-card {
+      width: 160px;
+    }
+  }
+  

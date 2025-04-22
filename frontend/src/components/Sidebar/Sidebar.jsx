@@ -24,10 +24,12 @@ const Sidebar = () => {
 
   const customerLinks = [
     { path: '/shop', label: 'Shop' },
+    { path: '/cart', label: 'My Cart' }, 
     { path: '/order-history', label: 'Order History' },
     { path: '/chat', label: 'Chat' },
     { path: '/delivery-tracking', label: 'Track My Delivery' },
     { path: '/payments', label: 'Payment' },
+
   ];
 
   const farmerLinks = [
