@@ -4,11 +4,11 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 260px; /* Slightly wider for better spacing */
-    background-color: #4CAF50; /* Green background */
+    width: 260px; 
+    background-color: #2d6a4f;
     padding-top: 20px;
-    z-index: 1000; /* Ensure the sidebar is always on top */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    z-index: 1000; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
 }
 
 /* Sidebar Menu */
@@ -35,8 +35,8 @@
 
 .sidebar-link:hover,
 .sidebar-link.active {
-    background-color: #388E3C; /* Darker green on hover/active */
-    transform: translateX(5px); /* Adds a smooth shifting effect */
+    background-color: #388E3C; 
+    transform: translateX(5px); 
 }
 
 /* Logout Button */

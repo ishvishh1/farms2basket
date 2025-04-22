@@ -1,115 +1,129 @@
 /* Register Page Styles */
 
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .register-container {
-    height: 100vh;
-	width: 100vw;
-	background-image: url('./Pictures/loginpic.webp');;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-  
-  .register-content {
-    background-color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    width: 370px;
-    height: 610px;
-  }
-  h2 {
-    text-align: center;
-    color: #2a9d8f;
-    margin-bottom: 1.5rem;
-  }
-  h3 {
-    text-align: center;
-    color: #2a9d8f;
-    margin-bottom: 1.5rem;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.register-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./Pictures/loginpic.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* Overlay to make form stand out over image */
+.register-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 78, 70, 0.5); /* Dark overlay */
+  z-index: 1;
+}
 
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 0.1rem;
-    font-size: 0.90rem;
-    color: #333;
-    text-transform: capitalize;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    margin-bottom: 0.1rem;
-    transition: border 0.1s;
-  }
-  
-  input:focus {
-    border-color: #2a9d8f;
-    outline: none;
-  }
-  
-  button {
-    background-color: #2a9d8f;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #1f776c;
-  }
-  
-  p {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 0.1rem;
-  }
-  
-  p[style*="red"] {
-    color: red;
-  }
-  
-  p[style*="green"] {
-    color: green;
-  }
-  .login-link {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  
-  .login-link a {
-    color: #2a9d8f;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .login-link a:hover {
-    text-decoration: underline;
-  }
-  
+/* Register Box */
+.register-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.7); /* Less transparent (70% opacity) */
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  width: 370px;
+  height: 610px;
+  backdrop-filter: blur(10px); /* Optional blur effect */
+}
+
+h2{
+  text-align: center;
+  color: #2d6a4f;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.1rem;
+  font-size: 0.90rem;
+  color: #333;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+  transition: border 0.1s;
+}
+
+input:focus {
+  border-color: #2a9d8f;
+  outline: none;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1f776c;
+}
+
+p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+p[style*="red"] {
+  color: red;
+}
+
+p[style*="green"] {
+  color: green;
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-link a {
+  color: #2d6a4f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

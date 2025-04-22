@@ -53,7 +53,7 @@ const ShopPage = () => {
 
   return (
     <div className="shop-page">
-      <p>Browse and order fresh produce from farmers</p>
+      <p>Browse and order fresh product from farmers</p>
 
       <div className="search-container">
         <div className="search-bar-with-button">
