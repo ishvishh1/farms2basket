@@ -20,7 +20,8 @@ const Sidebar = () => {
   const commonLinks = [
     { path: '/dashboard', label: 'Home' },
     { path: '/profile', label: 'Profile' },
-  ];
+    { path: '/contactus', label: 'Contact Us' }
+   ];
 
   const customerLinks = [
     { path: '/shop', label: 'Shop' },

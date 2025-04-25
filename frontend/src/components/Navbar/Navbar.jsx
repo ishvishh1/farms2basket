@@ -20,6 +20,7 @@ const Navbar = () => {
     "/orders",
     "/deliveries",
     "/cart",
+    "/contactus",
   ];
 
   // Hide Navbar if on a dashboard route

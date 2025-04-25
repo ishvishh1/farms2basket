@@ -24,6 +24,7 @@ import PaymentsPage from "../features/Payments/PaymentsPage";
 import ManageProducts from "../features/Farmer/ManageProducts";
 import OrdersPage from "../features/Farmer/OrdersPage";
 import DeliveriesPage from "../features/Farmer/DeliveriesPage";
+import ContactUs from "../features/ContactUs/ContactUs";
 
 import DashboardPage from "../features/Dashboard/DashboardPage";
 import Layout from "../components/Layout/Layout";
@@ -51,6 +52,7 @@ export default function App() {
               <Route path="/customer-dashboard" element={<CustomerDashboard />} />
               <Route path="/farmer-dashboard" element={<FarmerDashboard />} />
               <Route path="/profile" element={<ProfilePage />} />
+              <Route path ="/contactus" element={<ContactUs/>}/>
               <Route path="/shop" element={<ShopPage />} />
               <Route path="/shop/:categoryName" element={<CategoryPage />} />
               <Route path="/cart" element={<CartPage />} /> {/* ✅ Route for Cart */}
